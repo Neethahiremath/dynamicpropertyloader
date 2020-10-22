@@ -1,0 +1,4 @@
+kafkaconfiguration:
+  bootstrap-servers: 127.0.0.1:9094
+  auto-offset-reset: offset
+

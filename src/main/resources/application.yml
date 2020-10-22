@@ -1,0 +1,19 @@
+custom:
+  config:
+    refresh:
+      enabled: true
+      file-path: file:/temp/domainProperties.yml
+      reload-interval: 60
+
+
+kafkaconfiguration:
+  bootstrap-servers: 127.0.0.1:9092
+  auto-offset-reset: earliest
+  session-timeout-ms: 10000
+  enable-auto-commit: true
+  auto-commit-interval-ms: 500
+  poll-timeout: 5000
+  group-id: inventory-reservation-data-group
+  reservation-data-topic: inventory-reservation-data
+  concurrency: 4
+  max-poll-records: 500
